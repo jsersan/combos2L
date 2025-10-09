@@ -1,0 +1,30 @@
+[
+    {
+      "id": 1,
+      "nombre": "Madrid"
+    },
+    {
+      "id": 2,
+      "nombre": "Barcelona"
+    },
+    {
+      "id": 3,
+      "nombre": "Valencia"
+    },
+    {
+      "id": 4,
+      "nombre": "Sevilla"
+    },
+    {
+      "id": 5,
+      "nombre": "Alicante"
+    },
+    {
+      "id": 6,
+      "nombre": "Málaga"
+    },
+    {
+      "id": 7,
+      "nombre": "Murcia"
+    }
+  ]

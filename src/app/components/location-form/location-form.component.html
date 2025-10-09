@@ -1,0 +1,57 @@
+<div class="location-form-container">
+    <h2>Selección de ubicación</h2>
+    
+    <form [formGroup]="locationForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="provincia">Provincia:</label>
+        <select id="provincia" formControlName="provincia" class="form-control">
+          <option value="">-- Seleccione una provincia --</option>
+          <option *ngFor="let provincia of provincias" [value]="provincia.id">
+            {{ provincia.nombre }}
+          </option>
+        </select>
+        <div *ngIf="submitted && locationForm.get('provincia')?.errors 
+             && locationForm.get('provincia')?.hasError('required')" class="error-message">
+          Debe seleccionar una provincia
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label for="municipio">Municipio:</label>
+        <select id="municipio" formControlName="municipio" class="form-control" [disabled]="!selectedProvincia">
+          <option value="">-- Seleccione un municipio --</option>
+          <option *ngFor="let municipio of municipios" [value]="municipio.id">
+            {{ municipio.nombre }}
+          </option>
+        </select>
+        <div *ngIf="submitted && locationForm.get('municipio')?.errors 
+            && locationForm.get('municipio')?.hasError('required')" class="error-message">
+          Debe seleccionar un municipio
+        </div>
+        
+        <!-- Mensaje de carga -->
+        <div *ngIf="loading" class="loading-message">
+          Cargando...
+        </div>
+        
+        <!-- Mensaje si no hay municipios disponibles -->
+        <div *ngIf="selectedProvincia && municipios.length === 0 && !loading" class="info-message">
+          No hay municipios disponibles para esta provincia
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </div>
+    </form>
+    
+    <div *ngIf="submitted && locationForm.valid" class="result-section">
+      <h3>Ubicación seleccionada:</h3>
+      <p>
+        <strong>Provincia:</strong> {{ getProvinciaNombre(selectedProvinciaId) }}
+      </p>
+      <p>
+        <strong>Municipio:</strong> {{ getMunicipioNombre(selectedMunicipioId) }}
+      </p>
+    </div>
+  </div>

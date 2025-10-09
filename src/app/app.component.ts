@@ -3,8 +3,9 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styles: []
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'combos2D';
+  title = 'Aplicación de Combos Enlazados';
+  currentYear = new Date().getFullYear();
 }

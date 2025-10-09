@@ -1,0 +1,132 @@
+[
+    {
+      "id": 101,
+      "nombre": "Madrid",
+      "provincia_id": 1
+    },
+    {
+      "id": 102,
+      "nombre": "Móstoles",
+      "provincia_id": 1
+    },
+    {
+      "id": 103,
+      "nombre": "Alcalá de Henares",
+      "provincia_id": 1
+    },
+    {
+      "id": 104,
+      "nombre": "Fuenlabrada",
+      "provincia_id": 1
+    },
+    {
+      "id": 105,
+      "nombre": "Leganés",
+      "provincia_id": 1
+    },
+    {
+      "id": 201,
+      "nombre": "Barcelona",
+      "provincia_id": 2
+    },
+    {
+      "id": 202,
+      "nombre": "Hospitalet de Llobregat",
+      "provincia_id": 2
+    },
+    {
+      "id": 203,
+      "nombre": "Terrassa",
+      "provincia_id": 2
+    },
+    {
+      "id": 204,
+      "nombre": "Badalona",
+      "provincia_id": 2
+    },
+    {
+      "id": 205,
+      "nombre": "Sabadell",
+      "provincia_id": 2
+    },
+    {
+      "id": 301,
+      "nombre": "Valencia",
+      "provincia_id": 3
+    },
+    {
+      "id": 302,
+      "nombre": "Gandia",
+      "provincia_id": 3
+    },
+    {
+      "id": 303,
+      "nombre": "Torrent",
+      "provincia_id": 3
+    },
+    {
+      "id": 304,
+      "nombre": "Paterna",
+      "provincia_id": 3
+    },
+    {
+      "id": 401,
+      "nombre": "Sevilla",
+      "provincia_id": 4
+    },
+    {
+      "id": 402,
+      "nombre": "Dos Hermanas",
+      "provincia_id": 4
+    },
+    {
+      "id": 403,
+      "nombre": "Alcalá de Guadaíra",
+      "provincia_id": 4
+    },
+    {
+      "id": 501,
+      "nombre": "Alicante",
+      "provincia_id": 5
+    },
+    {
+      "id": 502,
+      "nombre": "Elche",
+      "provincia_id": 5
+    },
+    {
+      "id": 503,
+      "nombre": "Torrevieja",
+      "provincia_id": 5
+    },
+    {
+      "id": 601,
+      "nombre": "Málaga",
+      "provincia_id": 6
+    },
+    {
+      "id": 602,
+      "nombre": "Marbella",
+      "provincia_id": 6
+    },
+    {
+      "id": 603,
+      "nombre": "Vélez-Málaga",
+      "provincia_id": 6
+    },
+    {
+      "id": 701,
+      "nombre": "Murcia",
+      "provincia_id": 7
+    },
+    {
+      "id": 702,
+      "nombre": "Cartagena",
+      "provincia_id": 7
+    },
+    {
+      "id": 703,
+      "nombre": "Lorca",
+      "provincia_id": 7
+    }
+  ]
